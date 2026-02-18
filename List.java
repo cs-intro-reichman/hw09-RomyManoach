@@ -43,10 +43,10 @@ public class List {
     public String toString() {
         if (size == 0) return "()";
         Node current = first;
-        String str =  " ";
+        String str = "";
         
         while (current != null) {
-            str += current.cp.toString();
+            str += current.cp.toString() + " ";
             current = current.next;
         }
         return str;

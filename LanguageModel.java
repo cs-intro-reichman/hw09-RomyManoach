@@ -116,6 +116,7 @@ public class LanguageModel {
                 break;
             }
             char nextChar = getRandomChar(probs);
+            generatedText += nextChar;
             window = window.substring(1) + nextChar;
             
             }
